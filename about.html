@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caren_table</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_content">
+        <div class="log"><a href="#">Carenina</a></div>
+            <label for="check" class="checkbox">
+            </label>
+            <input type="checkbox" name="check" id="check">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="porto.html">Portofolio</a></li>
+            </ul>
+        </div>
+    <div style="text-align: center; padding-bottom: 25px;">
+    <div> <h1>About Me</h1>
+    </div>
+        <p>Student of SMK N 1 Adiwerna majoring in <b>Computer Network and <br>Telecommunications Engineering</b> who is interested in web programming.
+        </p></div>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --secondary-color: #ca8a04;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+width: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+background-color: #ffffff;
+z-index: 99;
+}
+
+.nav_content{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .log a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color-dark);
+    transition: 0.3s;
+}
+nav .log a:hover{
+    color: var(--primary-color-dark);
+}
+
+nav .checkbox{
+    display: none;
+}
+
+nav input{
+    display: none;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a{
+    padding: 1.5rem 1 rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+    </style>
+    <table border="1">
+        <tr>
+            <th rowspan="8">Pendidikan</th>
+        </tr>
+        <tr>
+            <th colspan="2">Pendidikan saya</th>
+        </tr>
+        <tr>
+            <td><b>SMK N 1 Adiwerna</b> <i>( 2021 - Sekarang )</i></td>
+        <tr>
+            <td>Jurusan : Teknik Jaringan Komputer dan Telekomunikasi</td>
+        </tr>
+        <tr>
+            <td> <b>SMP Negeri 1 Pangkah</b> <i>( 2018 - 2021 )</i></td>
+        </tr>
+        <tr>
+            <td> Jurusan    : -</td>
+        </tr>
+    </table>
+</body>
+</html>
